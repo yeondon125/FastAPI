@@ -16,4 +16,8 @@ def create_item(item: str):
         "items": items
     }
 
+@app.get("/items")
+def read_items():
+    return items
+
 
